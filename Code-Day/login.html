@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log In Page</title>
+    <link href="LoginPage.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <style>
+        div{
+            overflow: hidden;
+        }
+        body {
+            background-color: #F1F1F1;
+        }
+        input{
+            font-family: sans-serif !important;
+        }
+    </style>
+</head>
+<body>
+<div id="navbar" style="">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="login.html" style="font-family: 'Pacifico'; color: #3CD0E9">Points</a>
+            </div>
+            <form style="margin-left: 75%; margin-top: .5%; width: 600px;" method="post" action="./login.php">
+                <fieldset>
+                    <input type="text" name="username" placeholder="Email" style=" background-color: rgba(0,0,0,0);  border:none; border-bottom: 1px solid grey; color: grey; outline:none; -webkit-appearance:none; box-shadow:none; -webkit-box-shadow:none;"/>
+                    <input type="password" name="password" placeholder="Password" style=" background-color: rgba(0,0,0,0);  border:none; border-bottom: 1px solid grey; color: grey; outline:none; -webkit-appearance:none; box-shadow:none; -webkit-box-shadow:none;"/>
+                    <input type="submit" name="formSubmit" value="Login" style="border: 1px solid grey;border-radius: 4px;margin-left: 10px;background-color:rgba(0,0,0,0);color:grey;"/>
+                </fieldset>
+            </form>
+        </div>
+    </nav>
+</div>
+<div id="signin" style="height: 850px; width: auto; margin-top:-20px; min-width: 700px;">
+    <div id="picture" style="height: auto; width: 1400px; max-width: 75%; margin-top: 2%; margin-left: 2%; z-index:0;">
+        <img src="http://i.stack.imgur.com/JnqQa.jpg" style="height: 100%; width: 100%;">
+    </div>
+    <div id="form" style="height: 700px; width: 400px; float: right; top: 150px; right:50px; z-index: 1; position:absolute;">
+        <form id="msform" method="post" action="signUp.php" style="height: 700px; width: 400px; float: left;">
+            <fieldset style="height: 700px; width: 400px; margin-top: -12.5%; margin-left: -.1%;">
+                <h3 class="fs-subtitle" style="font-size: 50px;">Sign Up</h3>
+                <br>
+                <input type="text" name="biz_name" placeholder="Business Name" />
+                <br><br>
+                <input type="text" name="lastname" placeholder="Owner's Full Name" />
+                <br><br>
+                <input type="tel" name="phonenumber" placeholder="Phone Number" />
+                <br><br>
+                <input type="text" name="email" placeholder="Email"/>
+                <br><br>
+                <input type="password" name="Password" placeholder="Password"/>
+                <br><br>
+                <input type="submit" name="formSubmit" value="Submit" onclick="newPage2()"/>
+            </fieldset>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
